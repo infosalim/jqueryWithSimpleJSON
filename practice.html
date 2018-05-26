@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <script>
+        
+           
+          $(document).ready(function(){
+              var personJSON = {
+                "Salim":{
+                  "name": "Salim",
+                  "skill": "Javascript",
+                  "email": "salimh5757@gmail.com"
+                },
+                "Sagor":{
+                  "name": "Sagor",
+                  "skill": "Java",
+                  "email": "salimh5757@gmail.com"
+                }
+              };
+              
+              var result = " ";
+              result+= "Name: "+personJSON.name+"<br/>";
+              result+= "Skill: "+personJSON.skill+"<br/>";
+              result+= "Email: "+personJSON.email;
+              
+              
+              $("#salim").html(personJSON.Sagor.skill);
+          });
+          
+          
+          
+        </script>
+        
+        <style>
+
+            .container{
+                height: 600px;
+                width: 600px;
+                border: 1px solid #ddd;
+                margin: 0 auto;
+                margin-top: 50px;
+                background: 
+            }
+        </style>
+        
+        <div class="container">
+<!--            <button id="show1">add</button>-->
+          <div id="salim">
+              
+          </div>
+        </div>
+
+    </body>
+</html>
